@@ -128,7 +128,7 @@ tic
     'parallel'       ,  isunix() , ...
     'modules'        ,  {'dic'}  );
 
-fprintf('%s took %f seconds!\n', upper(engine), toc)
+%fprintf('%s took %f seconds!\n', upper(engine), toc)
 
 
 %% Inspect the results
