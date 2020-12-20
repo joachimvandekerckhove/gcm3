@@ -43,11 +43,9 @@ end
 dataMatrix = [data.pe' data.st' data.resp' data.ptsX' data.ptsY' data.ctgA' data.ctgB'];
 csvwrite('/tmp/gcm3-data.csv',dataMatrix)
 
-!echo 'pe,st,resp,ptsX,ptsY,ctgA,ctgB' > gcm3.csv 
+!echo 'pe,st,resp,ptsX,ptsY,ctgA,ctgB' > gcm3.csv
 !cat /tmp/gcm3-data.csv >> gcm3.csv
 !rm /tmp/gcm3-data.csv
-
-data
 
 %% Now, make all inputs that Trinity needs
 % Write the model into a variable (cell variable)
